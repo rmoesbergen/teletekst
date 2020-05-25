@@ -1,4 +1,4 @@
-## Teletekst vluchtijden scraper
+## Teletekst vluchttijden scraper
 Teletekst scraper voor vluchtinformatie van/naar Maastricht Airport
 
 ### Installatie instructies
