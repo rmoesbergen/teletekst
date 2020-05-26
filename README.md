@@ -13,3 +13,17 @@ curl https://raw.githubusercontent.com/rmoesbergen/teletekst/master/install.sh |
 ```
 
 Dit zal een cronjob installeren die elke nacht om 00:01 het script start en de CSV file in /home/pi/teletekst-<maand>.csv schijft.
+
+
+### Handmatig opstarten
+
+Het script kan ook handmatig worden gestart:
+
+```bash
+./teletekst.py <betandsnaam.csv>
+```
+
+De eerste en enige parameter is de naam van het bestand waarin de gegevens geschreven moeten worden.
+In de bestandsnaam kunnen datum/tijd formatterings tekens worden opgenomen:
+
+https://strftime.org/
