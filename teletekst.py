@@ -67,8 +67,11 @@ class TeletekstScraper:
         if not response.ok:
             raise response.content
 
+        print(f"[DEBUG] {av} {response.content.decode('utf8')}")
+
         seen_header = False
         for line in response.content.decode('utf8').split("\n"):
+            line = line.strip()
             if line.startswith('<span>') and 'Vlucht' in line and not seen_header:
                 seen_header = True
 

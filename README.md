@@ -12,7 +12,7 @@ ssh pi@<ip adres pi>
 curl https://raw.githubusercontent.com/rmoesbergen/teletekst/master/install.sh | bash
 ```
 
-Dit zal een cronjob installeren die elke nacht om 00:01 het script start en de CSV file in /home/pi/teletekst-<maand>.csv schijft.
+Dit zal een cronjob installeren die elke nacht om 00:15 het script start en de CSV file in /home/pi/teletekst-<maand>.csv schijft.
 
 
 ### Handmatig opstarten

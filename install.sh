@@ -8,4 +8,4 @@ wget https://raw.githubusercontent.com/rmoesbergen/teletekst/master/teletekst.py
 chmod +x /home/pi/teletekst.py
 
 # Install cron job a 1 minute past midnight
-echo "15 0 * * * pi /home/pi/teletekst.py '/home/pi/teletekst-\%m.csv'" | sudo tee /etc/cron.d/teletekst
+echo "15 0 * * * pi /home/pi/teletekst.py '/home/pi/teletekst-\%m.csv' &> /home/pi/teletekst-debug.log" | sudo tee /etc/cron.d/teletekst
